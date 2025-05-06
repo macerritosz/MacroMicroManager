@@ -40,17 +40,21 @@ fun MacroScreen() {
             ),
             elevation = CardDefaults.cardElevation(8.dp),
             modifier = Modifier.fillMaxWidth()
+                .fillMaxHeight()
         ) {
             Column(
                 Modifier.padding(16.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text("Macro Micromanager", fontSize = 20.sp, fontWeight = FontWeight.Bold)
-                Text("( 4/30/25 )", fontSize = 16.sp, color = Color.LightGray)
+
+                Text("Macro Micromanager", fontSize = 32.sp, fontWeight = FontWeight.Bold)
+
+                Spacer(Modifier.height(20.dp))
+                Text("( 4/30/25 )", fontSize = 20.sp, color = Color.LightGray)
 
                 Spacer(Modifier.height(8.dp))
 
-                Text("Fats: 78% | Carbs: 120% | Protein: 58%", fontSize = 14.sp)
+                Text("Fats: 78% | Carbs: 120% | Protein: 58%", fontSize = 20.sp)
 
                 Spacer(Modifier.height(12.dp))
 
@@ -58,7 +62,7 @@ fun MacroScreen() {
                     Box(
                         Modifier
                             .fillMaxWidth()
-                            .height(40.dp)
+                            .height(96.dp)
                             .background(Color.White, RoundedCornerShape(8.dp))
                             .padding(8.dp)
                             .border(1.dp, Color.LightGray, RoundedCornerShape(8.dp)),
@@ -66,7 +70,7 @@ fun MacroScreen() {
                     ) {
                         Text("Emojis") // Replace with emoji row as needed
                     }
-                    Spacer(Modifier.height(8.dp))
+                    Spacer(Modifier.height(32.dp))
                 }
 
                 Button(
